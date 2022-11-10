@@ -11,7 +11,7 @@ import MKTypography from "components/MKTypography";
 import logoCT from "assets/images/logo-ct-dark.png";
 
 const date = new Date().getFullYear();
-
+// This stuff is all for the footer of the page
 export default {
   brand: {
     name: "Material Kit 2",

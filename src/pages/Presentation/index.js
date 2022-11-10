@@ -44,8 +44,8 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-presentation.jpg";
-
+import bgImage from "assets/images/chem.jpeg";
+// Can add sticky to DefaultNavbar to keep the navbar on the page as you scroll down.
 function Presentation() {
   return (
     <>
@@ -53,11 +53,10 @@ function Presentation() {
         routes={routes}
         action={{
           type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "free download",
+          route: "https://ceder.berkeley.edu/",
+          label: "Ceder Group",
           color: "info",
         }}
-        sticky
       />
       <MKBox
         minHeight="75vh"
@@ -74,7 +73,7 @@ function Presentation() {
           <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
             <MKTypography
               variant="h1"
-              color="white"
+              color="black"
               mt={-6}
               mb={1}
               sx={({ breakpoints, typography: { size } }) => ({
@@ -83,17 +82,16 @@ function Presentation() {
                 },
               })}
             >
-              Material Kit 2 React{" "}
+              ML Synthesis Predictor{" "}
             </MKTypography>
             <MKTypography
               variant="body1"
-              color="white"
+              color="black"
               textAlign="center"
               px={{ xs: 6, lg: 12 }}
               mt={1}
             >
-              Free & Open Source Web UI Kit built over ReactJS &amp; MUI. Join over 1.6 million
-              developers around the world.
+              A machine learning model trained for solid-state synthesis.
             </MKTypography>
           </Grid>
         </Container>
